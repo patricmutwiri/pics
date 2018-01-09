@@ -1,0 +1,11 @@
+configuration.php
+/cache
+/tmp
+/logs
+/alter.txt
+/anychart.html
+/.zip
+php.ini
+config.inc.php
+.htaccess
+jelastic.conf

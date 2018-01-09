@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_ITEM_TITLE" option="COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_ITEM_DESC">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_EXPERTS_SINGLE_EXPERTS"
+		/>
+		<message>
+			<![CDATA[COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_ITEM_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_perfect_pics_experts/models/fields">
+			<field
+				name="id"
+				type="modal_experts"
+				description="COM_PERFECT_PICS_EXPERTS_FIELD_SELECT_EXPERTS_DESC"
+				label="COM_PERFECT_PICS_EXPERTS_FIELD_SELECT_EXPERTS_LABEL"
+				required="true"
+				edit="true"
+				clear="false"
+			/>
+		</fieldset>
+	</fields>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_PERFECT_PICS_EXPERTS_FIELDSET_MORE_OPTIONS_LABEL">
+		</fieldset>
+	</fields>
+</metadata>

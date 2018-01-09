@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_ITEM_TITLE" option="COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_ITEM_DESC">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_PERFECTPICS_ORDERS_SINGLE_PERFECTPICS_ORDERS"
+		/>
+		<message>
+			<![CDATA[COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_ITEM_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_perfectpics_orders/models/fields">
+			<field
+				name="id"
+				type="modal_perfectpics_orders"
+				description="COM_PERFECTPICS_ORDERS_FIELD_SELECT_PERFECTPICS_ORDERS_DESC"
+				label="COM_PERFECTPICS_ORDERS_FIELD_SELECT_PERFECTPICS_ORDERS_LABEL"
+				required="true"
+				edit="true"
+				clear="false"
+			/>
+		</fieldset>
+	</fields>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_PERFECTPICS_ORDERS_FIELDSET_MORE_OPTIONS_LABEL">
+		</fieldset>
+	</fields>
+</metadata>

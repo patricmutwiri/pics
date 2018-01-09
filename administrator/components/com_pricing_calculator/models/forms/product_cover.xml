@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<field 
+			name="id"
+			type="text"
+			label="COM_PRICING_CALCULATOR_PRODUCT_COVERS_FIELD_ID_LABEL"
+			description="COM_PRICING_CALCULATOR_PRODUCT_COVERS_FIELD_ID_DESC"
+			maxlength="10"
+			filter="INTEGER"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="cover_name"
+			label="Cover Name"
+			description="COM_PRICING_CALCULATOR_PRODUCT_COVERS_FIELD_COVER_NAME_DESC"
+			type="text"
+			maxlength="255"
+			class="input-xxlarge input-large-text"
+		>
+		</field>
+		<field 
+			name="price"
+			type="number"
+			label="Cover Price"
+			description="Cover Price"
+		/>
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			size="1"
+			default="1"
+			filter="interval"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		<field
+			name="checked_out"
+			type="hidden"
+			label="COM_PRICING_CALCULATOR_PRODUCT_COVERS_FIELD_CHECKED_OUT_LABEL"
+			description="COM_PRICING_CALCULATOR_PRODUCT_COVERS_FIELD_CHECKED_OUT_DESC"
+			filter="UNSET"
+		/>
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			class="readonly"
+		/>
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+		/>
+		<field
+			name="modified"
+			type="calendar"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_LABEL"
+			class="readonly"
+		/>
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+		/>
+		<field
+			name="publish_up"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>
+		<field
+			name="publish_down"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox"
+			format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			default="1"
+			class="inputbox"
+			size="1"
+		/>
+		<field
+			name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			translate_label="false"
+			class="inputbox"
+			filter="rules"
+			component="com_pricing_calculator"
+			section="product_cover"
+			validate="rules"
+		/>
+	</fieldset>
+</form>

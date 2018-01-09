@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS #__logos;
+DROP TABLE IF EXISTS #__covers;
+DROP TABLE IF EXISTS #__sizes;
+DROP TABLE IF EXISTS #__papers;
+DROP TABLE IF EXISTS #__end_sheets;

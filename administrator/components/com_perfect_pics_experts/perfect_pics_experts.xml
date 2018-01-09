@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_perfect_pics_experts</name>
+	<creationDate>2016 november 28</creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>COM_PERFECT_PICS_EXPERTS_XML_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>perfect_pics_experts.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_perfect_pics_experts.ini</language>
+	</languages>
+	
+	<administration>
+		<menu link="index.php?option=com_perfect_pics_experts">Perfect_pics_experts</menu>
+		<submenu>
+			<menu link="option=com_perfect_pics_experts&amp;view=expertss">expertss</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>perfect_pics_experts.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_perfect_pics_experts.ini</language>
+			<language tag="en-GB">language/en-GB.com_perfect_pics_experts.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<updateservers>
+	</updateservers>
+</extension>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+
+	<name>FAQ Book Pro</name>
+	<creationDate>January 2012</creationDate>
+	<author>Minitek.gr</author>
+	<authorUrl>https://www.minitek.gr/</authorUrl>
+	<copyright>Copyright (c) 2011-2017 Minitek. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.6.2</version>
+	<description>
+	<![CDATA[		
+		Minitek FAQ Book is a powerful content component for Joomla!
+	]]>	
+	</description>
+	
+	<scriptfile>install.faqbookpro.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+		
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>faqbookpro.php</filename>
+		<filename>controller.php</filename>
+		<folder>controllers</folder>
+		<folder>libraries</folder>
+		<folder>models</folder>
+		<folder>views</folder>	
+		<folder>layouts</folder>	
+		<folder>helpers</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	
+	<languages folder="site">
+    	<language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.ini</language>										
+    </languages>
+
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu>COM_FAQBOOKPRO_ADMIN_MENU</menu>
+		<submenu>
+			<menu link="option=com_faqbookpro&amp;view=sections" view="sections" img="class:sections" alt="COM_FAQBOOKPRO_SUBMENU_SECTIONS">
+				COM_FAQBOOKPRO_SUBMENU_SECTIONS
+			</menu>		
+			<menu link="option=com_faqbookpro&amp;view=topics" view="topics" img="class:topics" alt="COM_FAQBOOKPRO_SUBMENU_TOPICS">
+				COM_FAQBOOKPRO_SUBMENU_TOPICS
+			</menu>	
+			<menu link="option=com_faqbookpro&amp;view=questions" view="questions" img="class:questions" alt="COM_FAQBOOKPRO_SUBMENU_QUESTIONS">
+				COM_FAQBOOKPRO_SUBMENU_QUESTIONS
+			</menu>	
+			<menu link="option=com_faqbookpro&amp;view=about" view="about" img="class:about" alt="COM_FAQBOOKPRO_SUBMENU_ABOUT">
+				COM_FAQBOOKPRO_SUBMENU_ABOUT
+			</menu>
+		</submenu>
+		
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>faqbookpro.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.sys.ini</language>											
+		</languages>
+		
+	</administration>
+	
+	<!-- Update servers -->
+    <updateservers>
+        <server type="extension" priority="1" name="Minitek FAQ Book Pro">http://update.minitek.gr/joomla-extensions/minitek_faqbook.xml</server>
+    </updateservers>
+	
+	<config>
+	
+		<fields>
+			<fieldset>		  
+				<field name="load_jquery" default="1" />
+				<field name="load_phpthumb" default="1" />
+				<field name="load_fontawesome" default="1" />
+				<field name="home_link" default="0" />
+				<field name="sections_topnav" default="1" />
+				<field name="sections_page_description" default="1" />
+				<field name="sections_cols" default="3" />
+				<field name="sections_title" default="1" />
+				<field name="sections_description" default="1" />
+				<field name="topic_title" default="1" />
+				<field name="topic_description" default="1" />
+				<field name="topic_image" default="1" />
+				<field name="topic_imageSize" default="300" />
+				<field name="topic_imageHeight" default="225" />
+				<field name="show_subtopics" default="1" />
+				<field name="subtopics_title" default="1" />
+				<field name="subtopics_description" default="1" />
+				<field name="subtopics_image" default="1" />
+				<field name="subtopics_image_width" default="300" />
+				<field name="subtopics_image_height" default="225" />
+				<field name="subtopics_faqs" default="1" />
+				<field name="questions_ordering" default="ordering" />
+				<field name="questions_ordering_dir" default="DESC" />
+				<field name="questions_opened" default="0" />
+				<field name="questions_image" default="0" />
+				<field name="questions_image_width" default="300" />
+				<field name="questions_image_height" default="200" />
+				<field name="questions_text" default="1" />
+				<field name="questions_text_limit" default="20" />
+				<field name="questions_date" default="1" />
+				<field name="questions_date_format" default="l F d" />
+				<field name="questions_author" default="1" />
+			</fieldset>
+		</fields>
+		
+  </config>
+  	
+</extension>

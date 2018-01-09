@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="perfectpics_products" label="JACTION_COMPONENT_SETTINGS" description="Products Configs">
+		<field
+			name="discount10"
+			type="number"
+			label="Discount for more than 10 Items(%)"
+			description="Percentage(%) Discount while checking out more than 10 Items "
+			default="0"
+		/>
+		<field
+			name="photographers"
+			type="number"
+			label="Photographers Discount(%)"
+			description="Users under Photographers Group Discount(%)"
+			default="0"
+		/>
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_perfectpics_products"
+			section="component"
+		/>
+	</fieldset>
+</config>

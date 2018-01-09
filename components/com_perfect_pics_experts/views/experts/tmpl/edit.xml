@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_FORM_TITLE" option="COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_FORM_DESC">
+		<message>
+			<![CDATA[COM_PERFECT_PICS_EXPERTS_EXPERT_VIEW_FORM_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+		</fieldset>
+	</fields>
+</metadata>

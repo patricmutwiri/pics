@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  	
+	<fieldset 
+		name="basic" 
+		label="COM_FAQBOOKPRO_CONFIG_BASIC_SETTINGS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_BASIC_SETTINGS_DESC"	
+	>
+	
+		<field 
+			name="load_jquery" 
+			type="radio"
+			class="btn-group" 
+			default="1" 
+			label="COM_FAQBOOKPRO_CONFIG_LOAD_JQUERY_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_LOAD_JQUERY_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+				
+		<field 
+			name="load_phpthumb" 
+			type="radio"
+			class="btn-group" 
+			default="1" 
+			label="COM_FAQBOOKPRO_CONFIG_LOAD_PHPTHUMB_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_LOAD_PHPTHUMB_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="load_fontawesome" 
+			type="radio"
+			class="btn-group" 
+			default="1" 
+			label="COM_FAQBOOKPRO_CONFIG_LOAD_FONTAWESOME_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_LOAD_FONTAWESOME_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="version_check"
+			type="radio"
+			class="btn-group"
+			label="COM_FAQBOOKPRO_CONFIG_ENABLE_VERSION_CHECKING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ENABLE_VERSION_CHECKING_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+	
+	</fieldset>
+	
+	<fieldset
+		name="top_navigation"
+		label="COM_FAQBOOKPRO_CONFIG_TOP_NAVIGATION_SETTINGS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_TOP_NAVIGATION_SETTINGS_DESC"
+	>
+	
+		<field
+			name="home_link"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_HOME_LINK_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_HOME_LINK_DESC"
+			default="0"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	
+	</fieldset>
+	
+	<fieldset
+		name="sections"
+		label="COM_FAQBOOKPRO_CONFIG_SECTIONS_SETTINGS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_SECTIONS_SETTINGS_DESC"
+	>
+		
+		<field 
+			name="sections_topnav" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="COM_FAQBOOKPRO_FIELD_SECTIONS_TOPNAV_LABEL" 
+			description="COM_FAQBOOKPRO_FIELD_SECTIONS_TOPNAV_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+				
+		<field 
+			name="sections_page_description" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="COM_FAQBOOKPRO_FIELD_SECTIONS_PAGE_DESCRIPTION_LABEL" 
+			description="COM_FAQBOOKPRO_FIELD_SECTIONS_PAGE_DESCRIPTION_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="sections_cols" 
+			type="integer"
+			default="3" 
+			first="1" 
+			last="6" 
+			step="1" 
+			label="COM_FAQBOOKPRO_FIELD_SECTIONS_COLS_LABEL" 
+			description="COM_FAQBOOKPRO_FIELD_SECTIONS_COLS_DESC"
+		/>
+		
+		<field 
+			name="sections_title" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="COM_FAQBOOKPRO_FIELD_SECTIONS_TITLE_LABEL" 
+			description="COM_FAQBOOKPRO_FIELD_SECTIONS_TITLE_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="sections_description" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="COM_FAQBOOKPRO_FIELD_SECTIONS_DESCRIPTION_LABEL" 
+			description="COM_FAQBOOKPRO_FIELD_SECTIONS_DESCRIPTION_DESC"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	
+	</fieldset>
+	
+	<fieldset
+		name="topic"
+		label="COM_FAQBOOKPRO_CONFIG_TOPICS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_TOPICS_DESC"
+		addfieldpath="/administrator/components/com_faqbookpro/models/fields"
+	>
+	
+		<field name="separator_topic" type="separator" text="COM_FAQBOOKPRO_FIELD_TOPIC_SEPARATOR" />
+		
+	  	<field
+			name="topic_title"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_TOPIC_TITLE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_TOPIC_TITLE_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	
+	  	<field
+			name="topic_description"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_TOPIC_DESCRIPTION_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_TOPIC_DESCRIPTION_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="topic_image"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="topic_imageSize" 
+			type="text" 
+			default="300" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_SIZE_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_SIZE_DESC"
+		/>
+		
+		<field 
+			name="topic_imageHeight" 
+			type="text" 
+			default="225" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_HEIGHT_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_TOPIC_IMAGE_HEIGHT_DESC"
+		/>
+		
+		<field name="separator_subtopics" type="separator" text="COM_FAQBOOKPRO_FIELD_SUBTOPICS_SEPARATOR" />
+		
+		<field
+			name="show_subtopics"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+			
+		<field
+			name="subtopics_title"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_TITLE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_TITLE_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>	
+				
+		<field
+			name="subtopics_description"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_DESCRIPTION_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_DESCRIPTION_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="subtopics_image"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="subtopics_image_width" 
+			type="text" 
+			default="300" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_SIZE_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_SIZE_DESC"
+		/>  
+		
+		<field 
+			name="subtopics_image_height" 
+			type="text" 
+			default="225" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_HEIGHT_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_IMAGE_HEIGHT_DESC"
+		/>  
+		
+		<field
+			name="subtopics_faqs"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_FAQ_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBTOPICS_FAQ_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	 	
+		<field name="separator_questions" type="separator" text="COM_FAQBOOKPRO_FIELD_QUESTIONS_SEPARATOR" />
+		
+	  	<field
+			name="questions_ordering"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_ORDERING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_ORDERING_DESC"
+			default="ordering"
+			>
+		  	<option value="id">Id</option>
+			<option value="title">Title</option>		
+			<option value="title DESC">Title reverse</option>
+			<option value="created">Date created</option>
+			<option value="created DESC">Date created reverse</option>
+			<option value="modified">Date modified</option>
+			<option value="modified DESC">Date modified reverse</option>
+			<option value="ordering">Ordering</option>
+			<option value="ordering DESC">Ordering reverse</option>
+			<option value="hits">Hits</option>
+		</field>
+		
+		<field
+			name="questions_ordering_dir"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_ORDERING_DIRECTION_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_ORDERING_DIRECTION_DESC"
+			default="DESC"
+			>
+		  	<option value="ASC">COM_FAQBOOKPRO_CONFIG_QUESTIONS_ASCENDING</option>
+			<option value="DESC">COM_FAQBOOKPRO_CONFIG_QUESTIONS_DESCENDING</option>
+		</field>
+				
+		<field
+			name="questions_opened"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_OPENED_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_OPENED_DESC"
+			default="0"
+			>
+		  	<option value="0">JNO</option>
+		  	<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="questions_image"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_DESC"
+			default="0"
+			>
+		  	<option value="0">JHIDE</option>
+		  	<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="questions_image_width" 
+			type="text" 
+			default="300" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_SIZE_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_SIZE_DESC"
+		/>
+		
+		<field 
+			name="questions_image_height" 
+			type="text" 
+			default="200" 
+			size="4" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_HEIGHT_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_IMAGE_HEIGHT_DESC"
+		/>
+		
+		<field
+			name="questions_text"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_TEXT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_TEXT_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+				
+		<field
+			name="questions_text_limit"
+			type="text"
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_TEXT_LIMIT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_TEXT_LIMIT_DESC"
+			size="50"
+			default="20"
+		/>
+		  
+		<field
+			name="questions_date"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_DATE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_DATE_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="questions_date_format"
+			type="text"
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_DATE_FORMAT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_DATE_FORMAT_DESC"
+			default="l F d"
+		/>
+			
+		<field
+			name="questions_author"
+			type="radio"
+			class="btn-group" 
+			label="COM_FAQBOOKPRO_CONFIG_QUESTIONS_AUTHOR_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_QUESTIONS_AUTHOR_DESC"
+			default="1"
+			>
+		  	<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	
+	</fieldset>
+		
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	  >
+	  
+		<field
+		  name="rules"
+		  type="rules"
+		  label="JCONFIG_PERMISSIONS_LABEL"
+		  class="inputbox"
+		  validate="rules"
+		  filter="rules"
+		  component="com_faqbookpro"
+		  section="component"
+		 />
+		 
+   </fieldset>
+	
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_FORM_TITLE" option="COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_FORM_DESC">
+		<message>
+			<![CDATA[COM_PERFECTPICS_ORDERS_PERFECTPICS_ORDERS_VIEW_FORM_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field
+				name="catid"
+				type="category"
+				label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+				extension="com_perfectpics_orders"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
